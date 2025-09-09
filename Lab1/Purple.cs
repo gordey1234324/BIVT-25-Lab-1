@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Purple
     {
@@ -7,7 +7,7 @@
             bool answer = false;
 
             // code here
-
+            if ((a > 0 && b > 0 && c > 0) || (a < 0 && b < 0 && c < 0)) answer = true;
             // end
 
             return answer;
@@ -17,7 +17,10 @@
             bool answer = false;
 
             // code here
-
+            a = Math.Abs(a);
+            b = Math.Abs(b);
+            if (a % b == 0 && b != 0) answer = true;
+            if (b % a == 0 && a != 0) answer = true;
             // end
 
             return answer;
@@ -27,6 +30,8 @@
             bool answer = false;
 
             // code here
+            if ((a * a == b || a * a * a == b) || (b * b == a || b * b * b == a)) answer = true;
+
 
             // end
 
