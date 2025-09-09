@@ -19,8 +19,8 @@ namespace Lab1
             // code here
             a = Math.Abs(a);
             b = Math.Abs(b);
-            if (a % b == 0 && b != 0) answer = true;
-            if (b % a == 0 && a != 0) answer = true;
+            if (b != 0 && a % b == 0) answer = true;
+            if (a != 0 && b % a == 0) answer = true;
             // end
 
             return answer;
