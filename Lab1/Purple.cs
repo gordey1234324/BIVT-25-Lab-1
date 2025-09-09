@@ -42,7 +42,7 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            answer = f * f - 4 * d * g;
             // end
 
             return answer;
@@ -52,7 +52,9 @@ namespace Lab1
             double answer = 0;
 
             // code here
-
+            if (x <= -1) answer = 1;
+            if (x > -1 && x <= 1) answer = -x;
+            if (x > 1) answer = -1;
             // end
 
             return answer;
@@ -73,10 +75,45 @@ namespace Lab1
             int answer = 0;
 
             // code here
+            if (s == true)
+            {
+                if (t == true)
+                {
+                    answer = 6;
+                }
+                else 
+                {
+                    if(f == true)
+                    {
+                        answer = 10;
+                    }
+                    else
+                    {
+                        answer = 2;
+                    }
+                }
+            }
+            else
+            {
+                if (t == true)
+                {
+                    answer = 3;
+                }
+                else
+                {
+                    if (f == true)
+                    {
+                        answer = 5;
+                    }
+                    else
+                    {
+                        answer = 1;
+                    }
+                }
+            }
+                // end
 
-            // end
-
-            return answer;
+                return answer;
         }
         public bool Task8(int year, int pupils, int salary)
         {
@@ -91,4 +128,3 @@ namespace Lab1
         }
     }
 }
-
