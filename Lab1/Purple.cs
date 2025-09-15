@@ -64,7 +64,9 @@ namespace Lab1
             bool answer = false;
 
             // code here
-
+            double Circle1 = Math.Sqrt(circleS / 3.14) * 2;
+            double Square1 = Math.Sqrt(squareS) * Math.Sqrt(2);
+            if (Square1 < Circle1) answer = true;
             // end
 
             return answer;
@@ -128,3 +130,4 @@ namespace Lab1
         }
     }
 }
+
