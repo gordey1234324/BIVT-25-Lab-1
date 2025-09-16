@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices.Marshalling;
+
 namespace Lab1
 {
     public class Purple
@@ -119,14 +121,13 @@ namespace Lab1
         }
         public bool Task8(int year, int pupils, int salary)
         {
-            bool answer = false;
-            const int bank = 10000;
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) return false;
+            double avrors = pupils / 7.0;
+            double avrors_ceiling = Math.Ceiling(avrors);
 
-            // code here
-            
-            // end
+            double new_bank = avrors_ceiling * salary + pupils * 5;
 
-            return answer;
+            return new_bank <= 10000;
         }
     }
 }
